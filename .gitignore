@@ -11,6 +11,10 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 *.log
+/[Ll]ibrary/BurstCache/
+/[Ll]ibrary/PackageCache/
+/[Ll]ibrary/PackageCache/com.unity.burst/.Runtime/
+/[Oo]bj/
 
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
 *.blend1
@@ -19,6 +23,11 @@
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
+
+# Ignore Burst Compiler-generated files (such as libburst-llvm-*.dylib)
+[Bb]urst/
+/[Ll]ibrary/BurstCache/
+[Ll]ibrary/il2cpp_cache/
 
 # Recordings can get excessive in size
 /[Rr]ecordings/
@@ -88,6 +97,7 @@ InitTestScene*.unity*
 # files in platform-specific subfolders, for example:
 # /Assets/AddressableAssetsData/OSX/addressables_content_state.bin
 /[Aa]ssets/AddressableAssetsData/*/*.bin*
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
 # Visual Scripting auto-generated files
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
@@ -95,5 +105,26 @@ InitTestScene*.unity*
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
 
+# Ignore Unity-generated C# solutions
+/[Uu]nityGenerated/
+
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Ignore Cache and Temporary Files
+/[Cc]ache/
+/[Cc]ached[Aa]ssets/
+
+# Ignore Logs
+[Ll]ibrary/*_BackUpThisFolder_ButDontShipItWithYourGame/
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+[Dd]esktop.ini
