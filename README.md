@@ -71,10 +71,7 @@ Sprint boyunca aşağıdaki görevlerin tamamlanması hedeflenmiştir:
 - Solo developer olarak takımda designer olmadığı için Google Akademi Eğitim Portalı üzerinden Game Art dersinin alınması.
 
 ## Sprint içinde tamamlanması tahmin edilen puan
-Sprint 1 için temel kurulum ve konsept geliştirme adımlarına **10 puan** ayrılmıştır.  
-
-## Sprint Board Screenshot
-
+Sprint 1 için temel kurulum ve konsept geliştirme adımlarına **10 puan** ayrılmıştır. 
 
 
 ## Sprint Review  
