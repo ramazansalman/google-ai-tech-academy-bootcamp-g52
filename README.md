@@ -2,7 +2,7 @@
 
 ## **Team Name**
 
-**Will Be Announced** 
+**Solo Yolo**
 
 ## **Team Member**
 
@@ -14,28 +14,80 @@
 
 ## Game Name
 
-**Will Be Announced**
+**Echoes of Escape (EOE)**
 
 ## Game Description
 
-**Will Be Announced**
+ *Echoes of Escape* (EOE), oyuncuyu gizemli bir dünyaya hapsolmuş bir karakterin yerine koyar. Bu dünyadan kurtulmak için oyuncunun 3 farklı tapınakta gizlenmiş özel madenleri bulması ve bunları coin’e dönüştürmesi gerekir. Her bir coin, oyuncuya özgürlüğe bir adım daha yaklaştırır. Oyuncu 3 coin toplandığında büyülü bir arcade makinasına coinlerini atarak bu garip diyardan nihai kaçışı gerçekleştirebilir.  
+
+ Oyun keşif, bulmaca çözme ve çevresel etkileşimlere odaklı şiddetsiz bir 3D deneyim sunar.
 
 ## Game Story
 
-**Will Be Announced**
+Oyuncu, bilinmeyen bir evrende üç kutsal tapınağa dağılmış olan antik madenleri bularak kendi ruhsal zincirlerini kırmak ve gerçekliğe geri dönmek zorundadır.
 
 ## Game Features
 
-**Will Be Announced**
+- 3D Low-Poly grafikler  
+- Farklı biyomlar
+- Maden toplama & coin dönüştürme sistemi  
+- Tek oyunculu, hikaye destekli oynanış  
+- Çevresel gizemler ve kapalı dünya atmosferi  
+- Üç coin ile kaçış sistemi
 
 ## Target Audience
 
-**Will Be Announced**
+- Keşif tabanlı oyunları seven oyuncular  
+- 13 yaş ve üzeri oyuncular (PG-13)
+- Hikaye ve puzzle odaklı deneyim isteyenler  
+- Bağımsız ve mistik atmosfer seven oyuncular
 
 ## Marketing Plan
 
-**Will Be Announced**
+**To Be Announced**
 
 ## Product Backlog URL
 
 **Could not share JIRA Backlog with a public link so it will created on Miro**
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+Jira'nın bağlantısı dış dünyayla paylaşılamadığı için **Miro** üzerinde sprint takibi yapılacaktır.  
+
+[Miro Backlog Board - Coming Soon]
+
+---
+
+# Sprint 1 Documentation
+Sprint boyunca aşağıdaki görevlerin tamamlanması hedeflenmiştir:  
+
+- Proje yapısının kurulması  
+- README dosyasının oluşturulması  
+- Hikaye, hedef kitle ve temel oynanış fikirlerinin kağıt üzerinde planlanması  
+- Jira üzerinden ilk backlog kartlarının tanımlanması  
+- Unity projesinin başlatılması
+- Oyun assetlerinin araştırılması
+- Solo developer olarak takımda designer olmadığı için Google Akademi Eğitim Portalı üzerinden Game Art dersinin alınması.
+
+## Sprint içinde tamamlanması tahmin edilen puan
+Sprint 1 için temel kurulum ve konsept geliştirme adımlarına **10 puan** ayrılmıştır.  
+
+## Sprint Board Screenshot
+
+
+
+## Sprint Review  
+- Sprint boyunca belirlenen hedefler başarıyla tamamlandı.  
+- Teknik yapı kuruldu.
+- Proje artık ilerleyen sprintlerde kullanılacak temel yapıya sahip.  
+
+## Sprint Retrospective  
+- Zaman yönetimi tek kişi için yoğun olsa da kontrollü şekilde sürdürüldü.  
+- Günlük notlar sprint sonunda derlenerek belge haline getirildi.  
+- Tek kişilik bir takım olduğu için proje ilerideki sprintlerde 3D'den 2D'ye çevirilebilir.
+- İlk sprint genel olarak "game art" dersini takip etmek, benzer oyunların araştırmasını yapmak ve asset aramakla geçti.
+
+
+v1.0: Dosya oluşturuldu.
+v1.1: Sprint 1 eklendi.
