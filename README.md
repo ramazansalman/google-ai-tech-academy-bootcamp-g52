@@ -42,6 +42,14 @@ Oyuncu, bilinmeyen bir evrende üç kutsal tapınağa dağılmış olan antik ma
 - Hikaye ve puzzle odaklı deneyim isteyenler  
 - Bağımsız ve mistik atmosfer seven oyuncular
 
+## Ingame Images
+
+![prototype character](ss1.png)
+
+![prototype scene](ss2.png)
+
+![alt text](movement.gif)
+
 ## Marketing Plan
 
 **To Be Announced**
@@ -49,9 +57,9 @@ Oyuncu, bilinmeyen bir evrende üç kutsal tapınağa dağılmış olan antik ma
 ## Product Backlog URL
 
 **Could not share JIRA Backlog with a public link so it will created on Miro**
-![alt text](image.png)
+![Jira 1](image-3.png)
 
-![alt text](image-1.png)
+![Jira 2](image-4.png)
 
 Jira'nın bağlantısı dış dünyayla paylaşılamadığı için **Miro** üzerinde sprint takibi yapılacaktır.  
 
@@ -73,6 +81,16 @@ Sprint boyunca aşağıdaki görevlerin tamamlanması hedeflenmiştir:
 ## Sprint içinde tamamlanması tahmin edilen puan
 Sprint 1 için temel kurulum ve konsept geliştirme adımlarına **10 puan** ayrılmıştır. 
 
+| Görev                            | Tahmini Puan |
+|----------------------------------|--------------|
+| Hikaye ve oyun taslağı oluşturma | 20 puan      |
+| Game Art dersine başlamak        | 10 puan      |
+| Asset araştırma + toplama        | 10 puan      |
+| Prototip scene oluşturma         | 10 puan      |
+| Movement script yazımı           | 20 puan      |
+| Kamera ayarları                  | 20 puan      |
+| Sprint 1 Readme düzenlemesi      | 10 puan      |
+| **Toplam**                       | **100 puan** |
 
 ## Sprint Review  
 - Sprint boyunca belirlenen hedefler başarıyla tamamlandı.  
@@ -86,5 +104,8 @@ Sprint 1 için temel kurulum ve konsept geliştirme adımlarına **10 puan** ayr
 - İlk sprint genel olarak "game art" dersini takip etmek, benzer oyunların araştırmasını yapmak ve asset aramakla geçti.
 
 
-v1.0: Dosya oluşturuldu.
-v1.1: Sprint 1 eklendi.
+## Document History  
+
+- v1.2: Sprint 1 için Jira ekran görüntüleri ve oyun içi görüntüler eklendi.
+- v1.1: Sprint 1 eklendi.
+- v1.0: Dosya oluşturuldu.
