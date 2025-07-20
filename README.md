@@ -103,9 +103,50 @@ Sprint 1 için temel kurulum ve konsept geliştirme adımlarına **10 puan** ayr
 - Tek kişilik bir takım olduğu için proje ilerideki sprintlerde 3D'den 2D'ye çevirilebilir.
 - İlk sprint genel olarak "game art" dersini takip etmek, benzer oyunların araştırmasını yapmak ve asset aramakla geçti.
 
+# Sprint 2 Documentation
+Sprint boyunca aşağıdaki görevlerin tamamlanması hedeflenmiştir:  
+
+- Başlangıç haritasını (Starting Leveli) oluşturmak (20 points)  
+- Game art dersini tamamlamak ve 3d designa başlamak (10 points)
+- Bir adet basit bir temple tasarlamak (20 points)  
+- Sprint 2 Readme düzenlemesi (10 points)  
+- Temple içine engeller eklemek (spıke, labirent, platforms) (20 points)
+- Smooth movement controls (5 points)
+- Add Sky (5 points)
+- Add guide NPC (5 points)
+- Add Dummy NPCs (5 points)
+
+## Sprint içinde tamamlanması tahmin edilen puan
+Sprint 1 için temel kurulum ve konsept geliştirme adımlarına **10 puan** ayrılmıştır. 
+
+| Görev                            | Tahmini Puan |
+|----------------------------------|--------------|
+| Başlangıç haritasını (Starting Leveli) oluşturmak                     | 20 puan      |
+| Game art dersini tamamlamak ve 3d designa başlamak                    | 10 puan      |
+| Bir adet basit bir temple tasarlamak                                  | 20 puan      |
+| Temple içine engeller eklemek (spıke, labirent, platforms)            | 20 puan      |
+| Smooth movement controls                                              | 5 puan       |
+| Add Sky                                                               | 5 puan       |
+| Add guide NPC                                                         | 5 puan       |
+| Add Dummy NPCs                                                        | 5 puan       |
+| Sprint 2 Readme düzenlemesi                                           | 10 puan      |
+| **Toplam**                       | **100 puan** |
+
+## Sprint Review  
+- Sprint boyunca belirlenen hedeflerin çoğu başarıyla tamamlandı.   
+
+## Sprint Retrospective  
+- Tek kişi olunduğu için başlangıç haritası ve temple basit tutuldu.  
+- Günlük notlar sprint sonunda derlenerek belge haline getirildi.
+- "game art" dersi bitirildi.
+
+## Sprint 2 Images 
+![alt text](image-5.png)
+![alt text](image-6.png)
 
 ## Document History  
 
+- v1.32: Readme.md dosyası Sprint 2 için güncellendi.
 - v1.2: Sprint 1 için Jira ekran görüntüleri ve oyun içi görüntüler eklendi.
 - v1.1: Sprint 1 eklendi.
 - v1.0: Dosya oluşturuldu.
