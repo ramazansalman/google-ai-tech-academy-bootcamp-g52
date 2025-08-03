@@ -35,38 +35,28 @@ namespace PlayerMovement
         {
             controller = GetComponent<CharacterController>();
         }
-
-        // Inputları burada okuyarak fizik hesaplamalarından ayırıyoruz.
         void Update()
         {
-            // Yatay input: Horizontal ve Vertical axis'lerden ham değerleri alıyoruz.
             inputDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-            // Zıplama girişi: Jump tuşuna basıldığında (Space) zıplama isteğini işaretliyoruz.
             if (controller.isGrounded && (Input.GetButtonDown("Jump") || Input.GetAxis("Mouse ScrollWheel") > 0))
             {
                 wishJump = true;
             }
         }
-
-        // Fizik hesaplamaları için FixedUpdate kullanılıyor.
         void FixedUpdate()
         {
             bool isGrounded = controller.isGrounded;
 
             if (isGrounded)
             {
-                // Zemine temas halinde, düşüşte oluşan negatif y hızını sıfırlıyoruz.
                 if (velocity.y < 0)
-                    velocity.y = -2f; // Karakterin zeminde "yapışık" kalması için hafif bir aşağı kuvvet
+                    velocity.y = -2f;
 
-                // Yerdeyken sürtünme ile yavaşlatma
                 ApplyFriction();
 
-                // Hedef hız: sprint tuşuna bağlı olarak belirleniyor.
                 float targetSpeed = Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : walkSpeed;
 
-                // İstenilen hareket yönünü belirle (transform.right ve transform.forward baz alınarak)
                 Vector3 wishDir = transform.right * inputDir.x + transform.forward * inputDir.y;
                 if (wishDir.sqrMagnitude > 0.001f)
                 {
@@ -74,19 +64,16 @@ namespace PlayerMovement
                     Accelerate(wishDir, targetSpeed, acceleration);
                 }
 
-                // Zıplama isteği varsa zıplama yap
                 if (wishJump)
                 {
                     velocity.y = jumpForce;
                     wishJump = false;
                 }
             }
-            else // Hava durumunda
+            else
             {
-                // Yerçekimi uygulaması
                 velocity.y -= gravity * Time.fixedDeltaTime;
 
-                // Hava hareketi: Input yönüne göre ivmelenme, ancak havada kontrol daha sınırlı
                 Vector3 wishDir = transform.right * inputDir.x + transform.forward * inputDir.y;
                 if (wishDir.sqrMagnitude > 0.001f)
                 {
@@ -95,7 +82,6 @@ namespace PlayerMovement
                 }
             }
 
-            // Bunny hopping sırasında yatay hızın belirli bir maksimum değeri aşmaması için clamp uyguluyoruz.
             Vector3 horizontalVel = new Vector3(velocity.x, 0, velocity.z);
             if (horizontalVel.magnitude > maxSpeed)
             {
@@ -104,13 +90,12 @@ namespace PlayerMovement
                 velocity.z = horizontalVel.z;
             }
 
-            // Son olarak, karakteri hareket ettiriyoruz.
-            controller.Move(velocity * Time.fixedDeltaTime);
+            if (controller.enabled)
+            {
+                controller.Move(velocity * Time.fixedDeltaTime);
+            }
         }
 
-        /// <summary>
-        /// Zeminde verilen yönde ivmelenme uygular.
-        /// </summary>
         void Accelerate(Vector3 wishDir, float targetSpeed, float accel)
         {
             // Mevcut hızın, istenen yöndeki bileşenini hesapla.
@@ -126,14 +111,10 @@ namespace PlayerMovement
             velocity += wishDir * accelSpeed;
         }
 
-        /// <summary>
-        /// Havada verilen yönde ivmelenme uygular (bunny hopping için önemli).
-        /// </summary>
         void AirAccelerate(Vector3 wishDir, float accel, float controlFactor)
         {
-            // Mevcut yatay hızın, istenen yöndeki bileşenini hesapla.
             float currentSpeed = Vector3.Dot(new Vector3(velocity.x, 0, velocity.z), wishDir);
-            float addSpeed = walkSpeed - currentSpeed; // Hedef hız olarak normal yürüme hızı kullanılabilir.
+            float addSpeed = walkSpeed - currentSpeed;
             if (addSpeed <= 0)
                 return;
 
@@ -141,13 +122,9 @@ namespace PlayerMovement
             if (accelSpeed > addSpeed)
                 accelSpeed = addSpeed;
 
-            // Air control faktörü ile ivmeyi sınırlandırıyoruz.
             velocity += wishDir * accelSpeed * controlFactor;
         }
 
-        /// <summary>
-        /// Zeminde hareket halindeyken sürtünme uygular (ivme yavaşlatma).
-        /// </summary>
         void ApplyFriction()
         {
             Vector3 horizontalVel = new Vector3(velocity.x, 0, velocity.z);
@@ -167,6 +144,10 @@ namespace PlayerMovement
             horizontalVel *= newSpeed / speed;
             velocity.x = horizontalVel.x;
             velocity.z = horizontalVel.z;
+        }
+        public void ResetVelocity()
+        {
+            velocity = Vector3.zero;
         }
     }
 }

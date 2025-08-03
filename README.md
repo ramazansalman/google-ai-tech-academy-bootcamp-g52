@@ -117,14 +117,14 @@ Sprint boyunca aşağıdaki görevlerin tamamlanması hedeflenmiştir:
 - Add Dummy NPCs (5 points)
 
 ## Sprint içinde tamamlanması tahmin edilen puan
-Sprint 1 için temel kurulum ve konsept geliştirme adımlarına **10 puan** ayrılmıştır. 
+Sprint 2 için temel kurulum ve konsept geliştirme adımlarına **10 puan** ayrılmıştır. 
 
 | Görev                            | Tahmini Puan |
 |----------------------------------|--------------|
 | Başlangıç haritasını (Starting Leveli) oluşturmak                     | 20 puan      |
 | Game art dersini tamamlamak ve 3d designa başlamak                    | 10 puan      |
 | Bir adet basit bir temple tasarlamak                                  | 20 puan      |
-| Temple içine engeller eklemek (spıke, labirent, platforms)            | 20 puan      |
+| Temple içine engeller eklemek (spike, labirent, platforms)            | 20 puan      |
 | Smooth movement controls                                              | 5 puan       |
 | Add Sky                                                               | 5 puan       |
 | Add guide NPC                                                         | 5 puan       |
@@ -144,9 +144,62 @@ Sprint 1 için temel kurulum ve konsept geliştirme adımlarına **10 puan** ayr
 ![alt text](image-5.png)
 ![alt text](image-6.png)
 
+# Sprint 3 Documentation
+
+Sprint boyunca aşağıdaki görevlerin tamamlanması hedeflenmiştir:  
+
+- Add Dummy NPCs
+- Ana Menü ve bitiş menüsü tasarımı
+- Spike yeniden başlama, suya düşünce platform başından başlamak
+- Temple düzenlemesi
+- Toplanabilir obje eklemek
+- Platform asseti bulmak
+- Bitiş interaction oluşturmak
+- Sprint 3 Readme düzenlemesi
+
+# Sprint 3 Images
+![alt text](image-11.png)
+![alt text](image-7.png)
+![alt text](image-8.png)
+![alt text](image-9.png)
+![alt text](image-10.png)
+
+## Sprint içinde tamamlanması tahmin edilen puan
+Sprint 3 için temel kurulum ve konsept geliştirme adımlarına **10 puan** ayrılmıştır. 
+
+| Görev                            | Tahmini Puan |
+|----------------------------------|--------------|
+| Add Dummy NPCs                                                        | 10 puan      |
+| Ana Menü ve bitiş menüsü tasarımı                                    | 10 puan      |
+| Spike yeniden başlama, suya düşünce platform başından başlamak        | 20 puan      |
+| Temple düzenlemesi                                                    | 20 puan      |
+| Toplanabilir obje eklemek                                             | 10 puan      |
+| Platform asseti bulmak                                                | 10 puan      |
+| Bitiş interaction oluşturmak                                          | 10 puan      |
+| Sprint 3 Readme düzenlemesi                                           | 10 puan      |
+| **Toplam**                       | **100 puan** |
+
+Süreç boyunca birçok backlog itemi tamamlanmış olup hikaye biraz değiştmiştir.
+
+-Tutorial sahnesindeki temple, platformlar ve engeller düzenlendi.
+-Toplanabilir obje (hikayedeki coin cevher olarak eklendi)
+-Tapınak engelleri sonrası bitiş için yer oluşturuldu. Bu alana büyülü bir arcade makinası yerine toplanan cevherin konulacağı sunak eklendi.
+-Menü tasarımları yapıldı.
+
+### Tamamlanacak backlog itemleri
+- Add Dummy NPCs  
+- Ana Menü ve bitiş menüsü tasarımı yapıldı, oyuna eklenecek.
+
+### Demo YouTube Link
+https://youtu.be/th9_dkY95dA
+
+### Demo
+Oyunun demosunu "google-ai-tech-academy-bootcamp-g52\DemoBuild" klasörü içindeki "ProjectFoxtrotTango.exe" dosyasına tıklayarak deneyebilirsiniz.
+
 ## Document History  
 
-- v1.32: Readme.md dosyası Sprint 2 için güncellendi.
+- v1.4: Readme.md dosyası Sprint 3 için güncellendi.
+- v1.3: Readme.md dosyası Sprint 2 için güncellendi.
 - v1.2: Sprint 1 için Jira ekran görüntüleri ve oyun içi görüntüler eklendi.
 - v1.1: Sprint 1 eklendi.
 - v1.0: Dosya oluşturuldu.
